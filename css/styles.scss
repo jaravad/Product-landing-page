@@ -14,16 +14,13 @@ body {
   font-size: 16px;
 }
 
-.hero-section {
+.intro-section {
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/dji-mavic-2-zoom.jpg");
 
-  h1 {
-    margin: 0;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -40,6 +37,7 @@ body {
   .right {
     flex-basis: 50%;
     height: 100%;
+    position: relative;
     background-color: #e0e0e0;
   }
 
