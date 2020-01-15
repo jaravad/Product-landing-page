@@ -1,0 +1,93 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.hero-section {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/dji-mavic-2-zoom.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/dji-mavic-2-zoom.jpg");
+}
+
+.hero-section h1 {
+  margin: 0;
+}
+
+.products-section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.products-section .left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.products-section .right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 100%;
+  background-color: #e0e0e0;
+}
+
+.products-section .mavic {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: fly 4000ms ease-in-out infinite;
+          animation: fly 4000ms ease-in-out infinite;
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
