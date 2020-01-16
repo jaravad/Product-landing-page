@@ -5,17 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap"
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Mavic 2</title>
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header id="header">
+      <div class="container">
+        <img src="./images/logo.png" alt="logo" id="header-img" />
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#" class="nav-link">Products</a></li>
+            <li><a href="#" class="nav-link">Shots</a></li>
+            <li><a href="#" class="nav-link">Price</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="intro-section">
+      <h1>Mavic 2</h1>
+      <p>See the bigger picture</p>
+      <span></span>
       <video autoplay muted loop src="./images/Intro.mp4"></video>
     </section>
 
@@ -27,5 +40,6 @@
         <img src="./images/mavic-2-zoom.png" alt="Mavic 2 Zoom" class="mavic" />
       </div>
     </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

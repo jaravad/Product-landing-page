@@ -1,6 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -11,13 +12,111 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
+}
+
+header {
+  height: 5em;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 10;
+}
+
+header .container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  height: 3.125em;
+}
+
+header nav {
+  width: 30%;
+}
+
+header ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header li {
+  margin: 0 0.5em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: gray;
 }
 
 .intro-section {
   height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.intro-section h1 {
+  z-index: 2;
+  font-size: 7em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.intro-section p {
+  z-index: 2;
+  font-size: 1.5em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.intro-section span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0.4;
 }
 
 .intro-section video {
@@ -25,6 +124,9 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .products-section {
@@ -50,9 +152,9 @@ body {
 }
 
 .products-section .mavic {
-  width: 80%;
+  width: 70%;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -88,5 +190,15 @@ body {
     -webkit-transform: translate(-50%, -46%);
             transform: translate(-50%, -46%);
   }
+}
+
+::-moz-selection {
+  background-color: #e4e4e4;
+  color: #333;
+}
+
+::selection {
+  background-color: #e4e4e4;
+  color: #333;
 }
 /*# sourceMappingURL=styles.css.map */
