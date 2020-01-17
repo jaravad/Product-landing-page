@@ -10,17 +10,18 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Mavic 2</title>
   </head>
   <body>
     <header id="header">
       <div class="container">
-        <img src="./images/logo.png" alt="logo" id="header-img" />
+        <a href="/"><img src="./images/logo.png" alt="logo" id="header-img" /></a>
         <nav id="nav-bar">
           <ul>
             <li><a href="#drones" class="nav-link">Drones</a></li>
-            <li><a href="#" class="nav-link">Gallery</a></li>
-            <li><a href="#" class="nav-link">Price</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#" class="nav-link">Buy</a></li>
           </ul>
         </nav>
       </div>
@@ -37,28 +38,41 @@
         <img src="./images/mavic-2-pro.png" alt="Mavic 2 Pro" class="mavic" />
         <div class="specs-text">
           <h3><strong>MAVIC 2</strong> PRO</h3>
-          <h4>Hasselblad L1D-20c Camera<br>Iconic Image Quality</h4>
+          <h4>Hasselblad L1D-20c Camera<br />Iconic Image Quality</h4>
           <p>20 MP 1” CMOS Sensor</p>
           <p>Adjustable Aperture, f/2.8 – f/11</p>
           <p>10-bit Dlog-M</p>
           <p>10-bit HDR Video</p>
         </div>
-        
       </div>
 
       <div class="right flex-end">
         <img src="./images/mavic-2-zoom.png" alt="Mavic 2 Zoom" class="mavic" />
         <div class="specs-text">
           <h3><strong>MAVIC 2</strong> ZOOM</h3>
-          <h4>24-48 mm Optical Zoom Camera<br>Ultimate Flexibility</h4>
+          <h4>24-48 mm Optical Zoom Camera<br />Ultimate Flexibility</h4>
           <p>12 MP 1/2.3” CMOS Sensor</p>
           <p>48 MP Super Resolution Photo</p>
           <p>4x Lossless Zoom FHD Video</p>
           <p>Dolly Zoom</p>
         </div>
-        
       </div>
     </section>
+
+    <section class="gallery-section" id="gallery">
+      <h2>Gallery</h2>
+      <div class="video-wrapper">
+        <div class="video-container">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/7SembcsxrQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="buy-section">
+      
+    </section>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
