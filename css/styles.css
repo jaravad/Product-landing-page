@@ -93,7 +93,7 @@ header a:hover {
 }
 
 .intro-section h1 {
-  z-index: 2;
+  z-index: 5;
   font-size: 7em;
   font-weight: 400;
   text-transform: uppercase;
@@ -101,7 +101,7 @@ header a:hover {
 }
 
 .intro-section p {
-  z-index: 2;
+  z-index: 5;
   font-size: 1.5em;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
@@ -199,8 +199,9 @@ header a:hover {
 
 .products-section .mavic {
   width: 70%;
+  max-width: 100%;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -251,7 +252,7 @@ header a:hover {
 /*============ Gallery section ============*/
 .gallery-section {
   width: 90%;
-  margin: 5em auto;
+  margin: 5em auto 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,6 +308,9 @@ header a:hover {
   }
   .products-section {
     font-size: 14px;
+  }
+  .products-section .mavic {
+    top: 30%;
   }
   .gallery-section .video-wrapper {
     width: 85%;
