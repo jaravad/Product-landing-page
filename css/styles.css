@@ -508,7 +508,8 @@ footer p {
 }
 
 @media (max-width: 450px) {
-  header {
+  header,
+  footer {
     font-size: 14px;
   }
   .intro-section {
@@ -531,6 +532,9 @@ footer p {
   .products-section .right .specs-text,
   .products-section .left .specs-text {
     margin: 0 0 3em;
+  }
+  .gallery-section {
+    font-size: 14px;
   }
   .gallery-section .video-wrapper {
     width: 100%;

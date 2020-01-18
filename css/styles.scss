@@ -417,7 +417,8 @@ footer {
 }
 
 @media (max-width: 450px) {
-  header {
+  header,
+  footer {
     font-size: 14px;
   }
 
@@ -447,6 +448,8 @@ footer {
   }
 
   .gallery-section {
+    font-size: 14px;
+
     .video-wrapper {
       width: 100%;
     }
