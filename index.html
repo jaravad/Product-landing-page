@@ -10,18 +10,20 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Mavic 2</title>
   </head>
   <body>
     <header id="header">
       <div class="container">
-        <a href="/"><img src="./images/logo.png" alt="logo" id="header-img" /></a>
+        <a href="/"
+          ><img src="./images/logo.png" alt="logo" id="header-img"
+        /></a>
         <nav id="nav-bar">
           <ul>
             <li><a href="#drones" class="nav-link">Drones</a></li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#" class="nav-link">Buy</a></li>
+            <li><a href="#buy" class="nav-link">Buy</a></li>
           </ul>
         </nav>
       </div>
@@ -63,15 +65,53 @@
       <h2>Gallery</h2>
       <div class="video-wrapper">
         <div class="video-container">
-          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/7SembcsxrQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe
+            id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/7SembcsxrQw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-      
     </section>
 
-    <section class="buy-section">
-      
+    <section class="buy-section" id="buy">
+      <div>
+        <img src="./images/drones.png" alt="Mavic 2 Pro and Zoom" />
+        <div class="buy-text">
+          <p>
+            The Mavic 2 offers iconic Hasselblad image quality on the Pro and a
+            high-performance zoom lens on the Zoom.
+          </p>
+          <a class="btn"
+            href="https://store.dji.com/product/mavic-2?from=brandsite-tutorial"
+            target="_blank"
+            >Buy MAVIC 2</a
+          >
+        </div>
+      </div>
     </section>
+
+    <section class="newsletter">
+      <h3>Subscribe to our newsletter</h3>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          type="email"
+          placeholder="Enter an email"
+          id="email"
+          required
+        /><br />
+        <input type="submit" value="Subscribe" id="submit" class="btn subscribe"/>
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright © 2020 | DJI - Mavic 2</p>
+    </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

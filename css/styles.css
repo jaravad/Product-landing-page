@@ -252,7 +252,7 @@ header a:hover {
 /*============ Gallery section ============*/
 .gallery-section {
   width: 90%;
-  margin: 5em auto 7em;
+  margin: 7.5em auto 9em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -268,7 +268,7 @@ header a:hover {
 .gallery-section h2 {
   text-align: center;
   font-size: 3em;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
 .gallery-section .video-wrapper {
@@ -290,13 +290,143 @@ header a:hover {
 
 /*============ Buy section ============*/
 .buy-section {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto 7em;
   height: 25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buy-section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  max-width: 57em;
+}
+
+.buy-section img {
+  width: 50%;
+  max-width: 100%;
+}
+
+.buy-section .buy-text {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.buy-section p {
+  font-size: 1.2em;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  margin: 0 0 1.5em;
+}
+
+.btn {
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  color: #1d1d1d;
+  background-color: white;
+  padding: 1.1em 3em;
+  font-weight: 700;
+  border-radius: 0.3em;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #1d1d1d;
+  border: 1px solid white;
+}
+
+/*============ Newsletter ============*/
+.newsletter {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/images/Mavic-2-wide.png");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/Mavic-2-wide.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("/images/Mavic-2-wide.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/Mavic-2-wide.png");
+}
+
+.newsletter h3 {
+  font-size: 2em;
+  margin-top: 3em;
+}
+
+.newsletter form {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10em;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5em 1em;
+  border: 0;
+  border-radius: 0.2em;
+}
+
+.newsletter .subscribe {
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5em;
+  background-color: black;
 }
 
 /*============ Media queries ============*/
@@ -314,6 +444,37 @@ header a:hover {
   }
   .gallery-section .video-wrapper {
     width: 85%;
+  }
+  .buy-section {
+    font-size: 13px;
+  }
+  .buy-section div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+  }
+  .buy-section img {
+    width: 90%;
+  }
+  .buy-section .buy-text {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buy-section p {
+    margin: 4em 0 2.5em;
+  }
+  .buy-section a {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
