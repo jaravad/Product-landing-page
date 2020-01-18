@@ -292,6 +292,7 @@ header nav {
 /*============ Buy section ============*/
 .buy-section {
   width: 90%;
+  padding-top: 6em;
   margin: 0 auto 7em;
   height: 25em;
   display: -webkit-box;
