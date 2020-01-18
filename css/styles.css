@@ -51,24 +51,25 @@ header nav {
   width: 30%;
 }
 
-header ul {
+.nav-list {
   list-style-type: none;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-header a {
+.nav-list a {
   color: white;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
-header a:hover {
+.nav-list a:hover {
   color: gray;
 }
 
@@ -393,6 +394,7 @@ header a:hover {
 .newsletter h3 {
   font-size: 2em;
   margin-top: 3em;
+  text-align: center;
 }
 
 .newsletter form {
@@ -402,6 +404,11 @@ header a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 10em;
+  width: 20%;
+}
+
+.newsletter input {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .newsletter input[type="email"] {
@@ -415,18 +422,32 @@ header a:hover {
   padding-bottom: 0.7em;
 }
 
+/*============ Footer ============*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 5em;
+  height: 7em;
   background-color: black;
+}
+
+footer nav {
+  width: 50%;
+  margin-bottom: 1em;
+}
+
+footer p {
+  margin: 0;
 }
 
 /*============ Media queries ============*/
@@ -476,6 +497,14 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .newsletter form {
+    width: 40%;
+  }
+  footer nav {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
 }
 
 @media (max-width: 450px) {
@@ -505,6 +534,15 @@ footer {
   }
   .gallery-section .video-wrapper {
     width: 100%;
+  }
+  .newsletter {
+    font-size: 13px;
+  }
+  .newsletter form {
+    width: 60%;
+  }
+  footer nav {
+    width: 90%;
   }
 }
 
