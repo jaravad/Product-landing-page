@@ -83,7 +83,7 @@ header {
 
   p {
     z-index: 5;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     margin: 0;
@@ -304,7 +304,7 @@ header {
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/mavic-2-wide.jpg");
+    url("../images/mavic-2-wide.jpg");
 
   h3 {
     font-size: 2em;
@@ -425,6 +425,24 @@ footer {
 
   .intro-section {
     font-size: 11px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url("../images/andreas-dress-C8UjCsWp3Go-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    video,
+    span {
+      display: none;
+    }
+
+    h1 {
+      margin-top: 2em;
+    }
+
+    p {
+      font-size: 2.5em;
+    }
   }
 
   .products-section {
@@ -488,12 +506,12 @@ footer {
 
     .left {
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url("/images/mavic-2-pro.png");
+        url("../images/mavic-2-pro.png");
     }
 
     .right {
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url("/images/mavic-2-zoom.png");
+        url("../images/mavic-2-zoom.png");
     }
   }
 }
