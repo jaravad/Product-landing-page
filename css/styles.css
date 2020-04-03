@@ -413,14 +413,14 @@ header nav {
 }
 
 .newsletter input[type="email"] {
-  padding: 0.5em 1em;
+  padding: 0.9em 1em;
   border: 0;
   border-radius: 0.2em;
+  margin-bottom: 1.7em;
 }
 
 .newsletter .subscribe {
-  padding-top: 0.7em;
-  padding-bottom: 0.7em;
+  padding: 0.7em;
 }
 
 /*============ Footer ============*/
