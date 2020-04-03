@@ -95,30 +95,30 @@ header nav {
 
 .intro-section h1 {
   z-index: 5;
-  font-size: 7em;
+  font-size: 8em;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
+  margin: 1.3em 0 0;
 }
 
 .intro-section p {
   z-index: 5;
-  font-size: 2em;
+  font-size: 2.8em;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  margin: 0;
+  margin: -0.4em 0 0;
 }
 
 .intro-section span {
   display: inline-block;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), black);
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.4;
 }
 
 .intro-section video {
