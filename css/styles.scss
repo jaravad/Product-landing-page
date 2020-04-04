@@ -425,7 +425,11 @@ footer {
 
   .intro-section {
     font-size: 11px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), black),
+    background-image: linear-gradient(
+        top,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.8)
+      ),
       url("../images/andreas-dress-C8UjCsWp3Go-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -441,7 +445,7 @@ footer {
     }
 
     p {
-      font-size: 2.5em;
+      font-size: 2.8em;
     }
   }
 
