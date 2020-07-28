@@ -8,13 +8,17 @@
       href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600&display=swap"
       rel="stylesheet"
     />
-    
+
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Mavic 2</title>
   </head>
   <body>
-    <header id="header">
+    <header id="header" data-aos="fade-down">
       <div class="container">
         <a href="/"
           ><img src="./images/logo.png" alt="logo" id="header-img"
@@ -29,39 +33,58 @@
       </div>
     </header>
     <section class="intro-section">
-      <h1>Mavic 2</h1>
-      <p>See the bigger picture</p>
+      <div>
+        <h1>Mavic 2</h1>
+        <p>See the bigger picture</p>
+      </div>
       <span></span>
       <video autoplay muted loop src="./images/Intro.mp4"></video>
     </section>
 
     <section class="products-section" id="drones">
-      <div class="left flex-end">
+      <div class="left flex-end" data-aos="fade-right" data-aos-offset="300">
         <img src="./images/mavic-2-pro.png" alt="Mavic 2 Pro" class="mavic" />
-        <div class="specs-text">
+        <article
+          class="specs-text"
+          data-aos="fade-zoom-in"
+          data-aos-delay="1000"
+        >
           <h3><strong>MAVIC 2</strong> PRO</h3>
           <h4>Hasselblad L1D-20c Camera<br />Iconic Image Quality</h4>
-          <p>20 MP 1” CMOS Sensor</p>
-          <p>Adjustable Aperture, f/2.8 – f/11</p>
-          <p>10-bit Dlog-M</p>
-          <p>10-bit HDR Video</p>
-        </div>
+          <ul>
+            <li>20 MP 1” CMOS Sensor</li>
+            <li>Adjustable Aperture, f/2.8 – f/11</li>
+            <li>10-bit Dlog-M</li>
+            <li>10-bit HDR Video</li>
+          </ul>
+        </article>
       </div>
 
-      <div class="right flex-end">
+      <div class="right flex-end" data-aos="fade-left" data-aos-offset="300">
         <img src="./images/mavic-2-zoom.png" alt="Mavic 2 Zoom" class="mavic" />
-        <div class="specs-text">
+        <article
+          class="specs-text"
+          data-aos="fade-zoom-in"
+          data-aos-delay="1000"
+        >
           <h3><strong>MAVIC 2</strong> ZOOM</h3>
           <h4>24-48 mm Optical Zoom Camera<br />Ultimate Flexibility</h4>
-          <p>12 MP 1/2.3” CMOS Sensor</p>
-          <p>48 MP Super Resolution Photo</p>
-          <p>4x Lossless Zoom FHD Video</p>
-          <p>Dolly Zoom</p>
-        </div>
+          <ul>
+            <li>12 MP 1/2.3” CMOS Sensor</li>
+            <li>48 MP Super Resolution Photo</li>
+            <li>4x Lossless Zoom FHD Video</li>
+            <li>Dolly Zoom</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="gallery-section" id="gallery">
+    <section
+      class="gallery-section"
+      id="gallery"
+      data-aos="fade-zoom-in"
+      data-aos-offset="300"
+    >
       <h2>Gallery</h2>
       <div class="video-wrapper">
         <div class="video-container">
@@ -79,14 +102,15 @@
     </section>
 
     <section class="buy-section" id="buy">
-      <div>
+      <div data-aos="fade-zoom-in">
         <img src="./images/drones.png" alt="Mavic 2 Pro and Zoom" />
         <div class="buy-text">
           <p>
             The Mavic 2 offers iconic Hasselblad image quality on the Pro and a
             high-performance zoom lens on the Zoom.
           </p>
-          <a class="btn"
+          <a
+            class="btn"
             href="https://store.dji.com/product/mavic-2?from=brandsite-tutorial"
             target="_blank"
             >Buy MAVIC 2</a
@@ -95,7 +119,7 @@
       </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" data-aos="fade-zoom-in" data-aos-offset="200">
       <h3>Subscribe to our newsletter</h3>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input
@@ -105,7 +129,12 @@
           id="email"
           required
         /><br />
-        <input type="submit" value="Subscribe" id="submit" class="btn subscribe"/>
+        <input
+          type="submit"
+          value="Subscribe"
+          id="submit"
+          class="btn subscribe"
+        />
       </form>
     </section>
 
@@ -123,4 +152,12 @@
     <!-- FreeCodeCamp Tests -->
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 100,
+      once: true,
+    });
+  </script>
 </html>

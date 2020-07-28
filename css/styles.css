@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   background-color: #1d1d1d;
   margin: 0;
@@ -64,6 +64,7 @@ header nav {
 
 .nav-list a {
   color: white;
+  font-weight: 600;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -93,20 +94,35 @@ header nav {
   color: white;
 }
 
-.intro-section h1 {
+.intro-section div {
+  text-align: center;
   z-index: 5;
+}
+
+.intro-section h1 {
+  -webkit-animation: fade 1s linear 0.5s;
+          animation: fade 1s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 8em;
   font-weight: 400;
+  margin: 1em 0 0;
+  opacity: 0;
   text-transform: uppercase;
-  margin: 1.3em 0 0;
+  z-index: 1;
 }
 
 .intro-section p {
-  z-index: 5;
+  -webkit-animation: fade 1s linear 1s;
+          animation: fade 1s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   font-size: 2.8em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   margin: -0.4em 0 0;
+  opacity: 0;
+  z-index: 1;
 }
 
 .intro-section span {
@@ -134,11 +150,12 @@ header nav {
 
 /*============ Products section ============*/
 .products-section {
-  height: 60em;
+  height: 50em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
+  overflow: hidden;
 }
 
 .products-section .flex-end {
@@ -182,12 +199,21 @@ header nav {
   margin-bottom: 6em;
 }
 
+.products-section .specs-text ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.products-section .specs-text ul li {
+  margin: 1em 0;
+}
+
 .products-section strong {
   font-weight: 600;
 }
 
 .products-section h3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 3em;
   margin-bottom: 0;
@@ -202,42 +228,12 @@ header nav {
   width: 70%;
   max-width: 100%;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-animation: fly 4000ms ease-in-out infinite;
           animation: fly 4000ms ease-in-out infinite;
-}
-
-@-webkit-keyframes fly {
-  0% {
-    -webkit-transform: translate(-50%, -46%);
-            transform: translate(-50%, -46%);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -54%);
-            transform: translate(-50%, -54%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -46%);
-            transform: translate(-50%, -46%);
-  }
-}
-
-@keyframes fly {
-  0% {
-    -webkit-transform: translate(-50%, -46%);
-            transform: translate(-50%, -46%);
-  }
-  50% {
-    -webkit-transform: translate(-50%, -54%);
-            transform: translate(-50%, -54%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -46%);
-            transform: translate(-50%, -46%);
-  }
 }
 
 ::-moz-selection {
@@ -342,7 +338,7 @@ header nav {
 
 .buy-section p {
   font-size: 1.2em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   margin: 0 0 1.5em;
 }
@@ -409,10 +405,10 @@ header nav {
 }
 
 .newsletter input {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.newsletter input[type="email"] {
+.newsletter input[type='email'] {
   padding: 0.9em 1em;
   border: 0;
   border-radius: 0.2em;
@@ -451,6 +447,62 @@ footer p {
   margin: 0;
 }
 
+/*============ Keyframes ============*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes fly {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
+@keyframes fly {
+  0% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -54%);
+            transform: translate(-50%, -54%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -46%);
+            transform: translate(-50%, -46%);
+  }
+}
+
 /*============ Media queries ============*/
 @media (max-width: 900px) {
   nav {
@@ -459,16 +511,14 @@ footer p {
             flex-grow: 1;
   }
   .products-section {
-    font-size: 14px;
-  }
-  .products-section .mavic {
-    top: 30%;
+    font-size: 13px;
   }
   .gallery-section .video-wrapper {
     width: 85%;
   }
   .buy-section {
     font-size: 13px;
+    height: auto;
   }
   .buy-section div {
     -webkit-box-orient: vertical;
@@ -478,7 +528,7 @@ footer p {
     width: 90%;
   }
   .buy-section img {
-    width: 90%;
+    width: 60%;
   }
   .buy-section .buy-text {
     width: 90%;
@@ -516,7 +566,7 @@ footer p {
   .intro-section {
     font-size: 11px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.8))), url("../images/andreas-dress-C8UjCsWp3Go-unsplash.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../images/andreas-dress-C8UjCsWp3Go-unsplash.jpg");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("../images/andreas-dress-C8UjCsWp3Go-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -532,7 +582,7 @@ footer p {
     font-size: 2.8em;
   }
   .products-section {
-    display: initial;
+    display: block;
     height: auto;
     width: 100%;
   }
